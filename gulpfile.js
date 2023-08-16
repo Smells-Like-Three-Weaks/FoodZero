@@ -42,7 +42,7 @@ function fonts () {
         .pipe(ttf2woff2())
         .pipe(dest('app/assets/fonts'))
 }
-function  scripts() {
+function scripts() {
     return src([
         'app/js/main.js'
     ])
@@ -53,10 +53,10 @@ function  scripts() {
 }
 
 function styles() {
-    return src('app/styles/style.scss')
+    return src('app/styles/*')
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
         .pipe(concat('style.min.css'))
-        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(scss({outputStyle: "compressed"}))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream());
 }
