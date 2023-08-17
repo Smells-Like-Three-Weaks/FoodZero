@@ -70,9 +70,9 @@ function watching() {
         }
     });
     watch(['app/styles/**/*.scss'], styles)
-    watch(['app/images/src'], images)
+    watch(['app/assets/images/src'], images)
     watch(['app/js/main.js'], scripts)
-    watch(['app/components/*', 'app/pages/*', 'app/shared/ui/*', 'app/pages'], pages)
+    watch(['app/components/*', 'app/pages/*', 'app/shared/ui/*', 'app/pages', 'app/components/dist/***/**/*'], pages)
     watch(['app/components/src/***/**/*'], components)
     watch(['app/fonts/src'], fonts)
     watch(['app/*.html']).on('change', browserSync.reload);
