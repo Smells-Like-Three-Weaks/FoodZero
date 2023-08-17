@@ -1,4 +1,4 @@
-const {src, dest, watch, parallel, series} = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
 
 const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
@@ -26,22 +26,24 @@ function pages() {
 }
 
 function components() {
-    return src('app/components/**/*.html')
+    return src('app/components/src/***/**/*.html')
         .pipe(include({
             includePaths: ['app/components', 'app/shared/ui']
         }))
-        .pipe(dest('app'))
+        .pipe(dest('app/components/dist'))
         .pipe(browserSync.stream());
 }
-function fonts () {
+
+function fonts() {
     return src('app/assets/fonts/src/*.*')
-        .pipe(fonter ({
+        .pipe(fonter({
             formats: ['woff', 'ttf']
         }))
         .pipe(src('app/assets/fonts/*.ttf'))
         .pipe(ttf2woff2())
-        .pipe(dest('app/assets/fonts'))
+        .pipe(dest('app/assets/fonts/dist'))
 }
+
 function scripts() {
     return src([
         'app/js/main.js'
@@ -56,7 +58,7 @@ function styles() {
     return src('app/styles/*')
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
         .pipe(concat('style.min.css'))
-        .pipe(scss({outputStyle: "compressed"}))
+        .pipe(scss({ outputStyle: "compressed" }))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream());
 }
@@ -70,14 +72,16 @@ function watching() {
     watch(['app/styles/**/*.scss'], styles)
     watch(['app/images/src'], images)
     watch(['app/js/main.js'], scripts)
-    watch(['app/components/*', 'app/pages/*', 'app/shared/ui/*'], pages)
+    watch(['app/components/*', 'app/pages/*', 'app/shared/ui/*', 'app/pages'], pages)
+    watch(['app/components/src/***/**/*'], components)
+    watch(['app/fonts/src'], fonts)
     watch(['app/*.html']).on('change', browserSync.reload);
 }
 
 function images() {
     return src(['app/assets/images/src/*.*', '!app/assets/images/src/*.svg'])
         .pipe(newer('app/assets/images/dist'))
-        .pipe(avif({quality: 50}))
+        .pipe(avif({ quality: 50 }))
 
         .pipe(src('app/assets/images/src/*.*'))
         .pipe(newer('app/assets/images/dist'))
@@ -90,7 +94,7 @@ function images() {
         .pipe(dest('app/assets/images/dist'))
 }
 
-function sprites () {
+function sprites() {
     return src('app/assets/images/dist/*.svg')
         .pipe(svgSprite({
             mode: {
@@ -117,7 +121,7 @@ function building() {
         'app/assets/fonts/*.*',
         'app/js/main.min.js',
         'app/**/*.html'
-    ], {base: 'app'})
+    ], { base: 'app' })
         .pipe(dest('dist'))
 }
 
