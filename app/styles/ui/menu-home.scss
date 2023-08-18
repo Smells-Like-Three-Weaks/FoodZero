@@ -1,0 +1,24 @@
+.menu-home_top {
+    padding: 176px 0px 158px;
+    .menu-home_top__info {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 532px;
+    }
+}
+
+.menu-home_content__list {
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+
+    .menu-home_content__row {
+        display: flex;
+        gap: 60px;
+
+        .menu-home_content__list-item {
+            width: 792px;
+        }
+    }
+}
