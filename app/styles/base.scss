@@ -1,0 +1,72 @@
+// box-settings
+.header {
+    position: fixed;
+}
+
+// box-sizing
+.wrapper {
+    max-width: 1644px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// font settings
+.this-is-body__b, .excerpt {
+    font-family: "Lato-Bold", sans-serif;
+}
+
+.widgets-title, .widget-texts, .nav-subitem, .this-is-body, .body-cap, .label, .widget-coments {
+    font-family: "Lato-Regular", sans-serif;
+}
+
+.large-title, h1, h2, h3, h4, h5, h6, .nav-item {
+    font-family: "Rufina-Bold", sans-serif;
+}
+
+.large-title {
+    font-size: 148px;
+}
+
+h1 {
+    font-size: 108px;
+}
+
+h2 {
+    font-size: 88px;
+}
+
+h3 {
+    font-size: 68px;
+}
+
+h4 {
+    font-size: 48px;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 26px;
+}
+
+.nav-subitem, .this-is-body, .this-is-body__b{
+    font-size: 24px;
+}
+
+.excerpt {
+    font-size: 22px;
+}
+
+.widgets-title, .body-cap {
+    font-size: 20px;
+}
+
+.label, .widget-texts    {
+    font-size: 18px;
+}
+
+.widget-coments {
+    font-size: 14px;
+}
