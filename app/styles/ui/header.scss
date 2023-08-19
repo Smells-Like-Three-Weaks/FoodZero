@@ -1,0 +1,36 @@
+.header {
+    margin-bottom: -208px;
+    height: 208px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .header-contacts {
+            display: flex;
+            gap: 26px;
+            align-items: center;
+
+            .header-contacts_contact {
+                font-family: "Lato-Regular", sans-serif;
+                font-size: 26px;
+            }
+
+            .header-contacts_button {
+                font-size: 32px;
+                font-family: "Rufina-Bold", sans-serif;
+                padding: 20px 46px;
+                border: 2px solid white;
+            }
+        }
+    }
+}
