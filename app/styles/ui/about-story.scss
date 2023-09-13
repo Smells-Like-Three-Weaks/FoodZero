@@ -1,0 +1,27 @@
+.about-story-wrapper {
+    display: flex;
+    column-gap: 107px;
+
+    .about-story_content {
+        width: 668px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        padding-left: 77px;
+        padding: 451px 0px 211px 0px;
+    }
+
+    .about-story_image {
+        width: 792px;
+        height: 576px;
+        margin-top: 218px;
+    }
+
+    .about-story_vector {
+        position: absolute;
+        stroke-width: 1px;
+        top: 94px;
+        left: 538px;
+        z-index: 2;
+    }
+}

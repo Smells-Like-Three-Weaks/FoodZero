@@ -12,12 +12,12 @@
         .header-title {
             display: flex;
             align-items: center;
-            gap: 45px;
+            column-gap: 45px;
         }
 
         .header-contacts {
             display: flex;
-            gap: 26px;
+            column-gap: 26px;
             align-items: center;
 
             .header-contacts_contact {
@@ -30,6 +30,47 @@
                 font-family: "Rufina-Bold", sans-serif;
                 padding: 20px 46px;
                 border: 2px solid white;
+                color: var(--color--white);
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 1366px) {
+    .header {
+        height: calc(0.71*208px);   
+        
+        .header-wrapper {
+
+            .header-title {
+                column-gap: calc(0.71*45px);
+
+                .header-title_burger__button {
+
+                    .header-title_burger__image {
+
+                        width: 67px;
+                    }
+                }
+            
+                .header-title_logo {
+
+                    width: 219px;
+                }
+            }
+
+            .header-contacts {
+                column-gap: calc(0.71*26px);
+
+                .header-contacts_contact {
+                    font-size: 18px;
+                }
+
+                .header-contacts_button {
+                    font-size: 23px;
+                }
             }
         }
     }

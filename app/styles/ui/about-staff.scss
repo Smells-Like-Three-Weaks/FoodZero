@@ -1,0 +1,20 @@
+.about-staff-wrapper {
+    padding: 162px 0px 305px 0px;
+    display: flex;
+    column-gap: 121px;
+
+    .about-staff_coloumn {
+        display: flex;
+
+        .about-staff_coloumn__card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            justify-content: center;
+
+            .about-staff_coloumn__card-subtitle {
+                
+            }
+        }
+    }
+}

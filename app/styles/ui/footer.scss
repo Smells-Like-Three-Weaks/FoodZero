@@ -1,11 +1,139 @@
+.footer {
+    background-color: var(--color--dark-green);
+    color: var(--color--white);
+}
+
 .footer-main_wrapper {
+    height: 500px;
+    display: flex;
+    align-items: center;
 
     .footer-main_title {
         width: 188px;
     }
+
+    .footer-main_contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+        padding: 0 202px 0 238px;
+
+        .footer-main_contacts__contact {
+            padding-top: 27px;
+            width: 224px;
+        }
+
+        .footer-main_contacts__info {
+            width: 210px;
+        }
+    }
+
+    .footer-main_recipe {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        .footer-main_recipe_mail {
+            display: flex;
+            column-gap: 12px;
+            padding-top: 40px;
+
+            .footer-main_recipe__input {
+                border: 2px solid #fFFFFF;
+                padding: 30px 40px;
+                width: 443px;
+            }
+
+            .footer-main_recipe__input::placeholder {
+                color: var(--color--white);
+            }
+
+            .footer-main_recipe__button {
+                font-family: "Rufina-Bold", sans-serif;
+                font-size: 32px;  
+                border: 1px solid var(--color--light-green); 
+                padding: 20px 46px;
+                background-color: var(--color--light-green);
+            }
+        }
+    }
 }
 
-.footer-links_wrapper {
-    
+.footer-bottom {
+    height: 171px;
+    border-top: 2px dashed white;
+    display: flex;
+    align-items: center;
 
+    .footer-bottom_wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        .footer-bottom_links {
+
+            .footer-bottom_links__list {
+                display: flex;
+                column-gap: 28px;
+
+                .footer-bottom_links__list {
+
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width: 1366px) {
+
+    .footer-main_wrapper {
+        height: 360px;
+
+        .footer-main_contacts {
+            row-gap: 20px;
+            padding: 0 143px 0 169px;
+
+            .footer-main_contacts__contact {
+                padding-top: 19px;
+                width: 159px;
+            }
+
+            .footer-main_contacts__info {
+                width: 150px;
+            }
+        }
+
+        .footer-main_recipe {
+            row-gap: 11px;
+
+            .footer-main_recipe_mail {
+                column-gap: 9px;
+                padding-top: 28px;
+
+                .footer-main_recipe__input {
+                    padding: 21px 28px;
+                    width: 315px;
+                }
+
+                .footer-main_recipe__button {
+                    font-size: 23px;
+                    padding: 14px 33px;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        height: 121px;
+
+        .footer-bottom_wrapper {
+
+            .footer-bottom_links {
+
+                .footer-bottom_links__list {
+                    column-gap: 20px;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,28 @@
+.about-main-hero {
+    background-image: url(../../assets/images/dist/about-main-hero.png);
+    height: 1080px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    .about-main-hero-wrapper {
+        justify-content: end;
+        margin-right: 81px;
+        display: flex;
+        width: 915px;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 50px;
+        color: var(--color--white);
+
+        .about-main-hero_subtitle {
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+            /* 150% */
+        }
+    }
+}

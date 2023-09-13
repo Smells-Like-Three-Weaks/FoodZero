@@ -1,0 +1,18 @@
+.menu-main-hero {
+    display: flex;
+    align-items: center;
+    height: 1080px;
+    width: 100%;
+    background-image: url(../../assets/images/dist/menu-main-hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--color--white);
+}
+
+.menu-main-hero-wrapper {
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
