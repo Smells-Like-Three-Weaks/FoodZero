@@ -1,0 +1,43 @@
+.chef-container {
+    background-color: #EBF0E4;
+    padding-top: 222px;
+}
+
+.chef-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.chef_images-wrapper {
+    width: 65%;
+}
+
+.chef_text-wrapper {
+    width: 35%;
+    padding-top: 222px;
+}
+
+.chef_img__chef-man {
+    position: absolute;
+}
+
+.chef_img__brown-board {
+    position: absolute;
+    padding-top: 70px;
+    padding-left: 27px;
+}
+
+.chef_img__leaf-mini {
+    width: 365.517px;
+    height: 372.08px;
+    transform: rotate(90deg);
+    z-index: 2;
+    position: relative;
+}
+
+.chef_img__leaf-big {
+    width: 350px;
+    height: 399px;
+    transform: rotate(-23.312deg);
+    margin-left: 150px;
+}
