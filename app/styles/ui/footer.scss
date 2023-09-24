@@ -3,52 +3,52 @@
     color: var(--color--white);
 }
 
-.footer-main_wrapper {
+.footer-main__wrapper {
     height: 500px;
     display: flex;
     align-items: center;
 
-    .footer-main_title {
+    .footer-main__title {
         width: 188px;
     }
 
-    .footer-main_contacts {
+    .footer-main__contacts {
         display: flex;
         flex-direction: column;
         row-gap: 28px;
         padding: 0 202px 0 238px;
 
-        .footer-main_contacts__contact {
+        .footer-main__contacts-contact {
             padding-top: 27px;
             width: 224px;
         }
 
-        .footer-main_contacts__info {
+        .footer-main__contacts-info {
             width: 210px;
         }
     }
 
-    .footer-main_recipe {
+    .footer-main__recipe {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
 
-        .footer-main_recipe_mail {
+        .footer-main__recipe__mail {
             display: flex;
             column-gap: 12px;
             padding-top: 40px;
 
-            .footer-main_recipe__input {
+            .footer-main__recipe-input {
                 border: 2px solid #fFFFFF;
                 padding: 30px 40px;
                 width: 443px;
             }
 
-            .footer-main_recipe__input::placeholder {
+            .footer-main__recipe-input::placeholder {
                 color: var(--color--white);
             }
 
-            .footer-main_recipe__button {
+            .footer-main__recipe-button {
                 font-family: "Rufina-Bold", sans-serif;
                 font-size: 32px;  
                 border: 1px solid var(--color--light-green); 
@@ -65,17 +65,17 @@
     display: flex;
     align-items: center;
 
-    .footer-bottom_wrapper {
+    .footer-bottom__wrapper {
         display: flex;
         justify-content: space-between;
         
-        .footer-bottom_links {
+        .footer-bottom__links {
 
-            .footer-bottom_links__list {
+            .footer-bottom__links-list {
                 display: flex;
                 column-gap: 28px;
 
-                .footer-bottom_links__list {
+                .footer-bottom__links-list {
 
                 }
             }
@@ -86,36 +86,36 @@
 
 @media(max-width: 1366px) {
 
-    .footer-main_wrapper {
+    .footer-main__wrapper {
         height: 360px;
 
-        .footer-main_contacts {
+        .footer-main__contacts {
             row-gap: 20px;
             padding: 0 143px 0 169px;
 
-            .footer-main_contacts__contact {
+            .footer-main__contacts-contact {
                 padding-top: 19px;
                 width: 159px;
             }
 
-            .footer-main_contacts__info {
+            .footer-main__contacts-info {
                 width: 150px;
             }
         }
 
-        .footer-main_recipe {
+        .footer-main__recipe {
             row-gap: 11px;
 
-            .footer-main_recipe_mail {
+            .footer-main__recipe__mail {
                 column-gap: 9px;
                 padding-top: 28px;
 
-                .footer-main_recipe__input {
+                .footer-main__recipe-input {
                     padding: 21px 28px;
                     width: 315px;
                 }
 
-                .footer-main_recipe__button {
+                .footer-main__recipe-button {
                     font-size: 23px;
                     padding: 14px 33px;
                 }
@@ -126,11 +126,11 @@
     .footer-bottom {
         height: 121px;
 
-        .footer-bottom_wrapper {
+        .footer-bottom__wrapper {
 
-            .footer-bottom_links {
+            .footer-bottom__links {
 
-                .footer-bottom_links__list {
+                .footer-bottom__links-list {
                     column-gap: 20px;
                 }
             }

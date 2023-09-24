@@ -7,13 +7,13 @@
     .testimonials-quote {
         position: relative;
 
-        .testimonials-quote_image {
+        .testimonials-quote__image {
             position: absolute;
             top: 0;
             right: 127px;
         }
 
-        .testimonials-quote_text {
+        .testimonials-quote__text {
             width: 1262px;
         }
     }
@@ -23,12 +23,12 @@
         justify-content: space-between;
         align-items: center;
 
-        .testimonials-info_avatar {
+        .testimonials-info__avatar {
             display: flex;
             column-gap: 60px;
             align-items: center;
 
-            .testimonials-info_avatar__name {
+            .testimonials-info__avatar-name {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -36,7 +36,7 @@
             }
         }
 
-        .testimonials-info_navigation {
+        .testimonials-info__navigation {
             display: flex;
             align-items: center;
             column-gap: 40px;
@@ -52,35 +52,35 @@
 
         .testimonials-quote {
 
-            .testimonials-quote_image {
+            .testimonials-quote__image {
                 right: 90px;
                 width: 200px;
             }
 
-            .testimonials-quote_text {
+            .testimonials-quote__text {
                 width: 896px;
             }
         }
 
         .testimonials-info {
 
-            .testimonials-info_avatar {
+            .testimonials-info__avatar {
                 column-gap: 43px;
 
-                .testimonials-info_avatar__img {
+                .testimonials-info__avatar-img {
                     width: 138px;
                 }
 
-                .testimonials-info_avatar__name {
+                .testimonials-info__avatar-name {
                     row-gap: 4px;
                 }
             }
         }
 
-        .testimonials-info_navigation {
+        .testimonials-info__navigation {
             column-gap: 28px;
 
-            .testimonials-info_navigation__button {
+            .testimonials-info__navigation-button {
                 width: 34px;
             }
         }

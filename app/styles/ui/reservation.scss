@@ -15,7 +15,7 @@
         row-gap: 18px;
         align-items: center;
 
-        .reservation-top_description {
+        .reservation-top__description {
             color: var(--color--dark-gray);
         }
     }
@@ -23,14 +23,14 @@
     .reservation-content {
         display: flex;
         column-gap: 48px;
-        .reservation-content_input {
+        .reservation-content__input {
             color: var(--color--black);
             border: 2px solid var(--color--black);
             padding: 30px 40px;
             width: 516px;
         }
 
-        .reservation-content_input select {
+        .reservation-content__input select {
             background: var(--color--white);
         }
     }
@@ -41,7 +41,7 @@
         height: 88px;
         background-color: var(--color--light-green);
 
-        .reservation-button_text {
+        .reservation-button__text {
             color: var(--color--white);
         }
     }
@@ -60,7 +60,7 @@
         .reservation-content {
             column-gap: 34px;
 
-            .reservation-content_input {
+            .reservation-content__input {
                 width: 366px;
                 padding: 21px 28px;
             }

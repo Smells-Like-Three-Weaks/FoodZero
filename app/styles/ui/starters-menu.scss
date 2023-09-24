@@ -1,6 +1,12 @@
-.starters-menu_top__image {
+.startmenu__top-image {
     stroke-width: 1px;
     position: absolute;
     right: 19px;
     top: 0;
+}
+
+@media(max-width: 1366px) {
+    .startmenu-content__image {
+        width: 426px;
+    }
 }

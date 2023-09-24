@@ -104,7 +104,7 @@ h6 {
     gap: 60px;
 }
 
-.menu-list_item {
+.menu-list__item {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -179,6 +179,23 @@ h6 {
     }
 
     .menu-top {
-        
+        width: 531px;
+        row-gap: 13px;
+    }
+
+    .menu-list {
+        row-gap: 41px;
+    }
+
+    .menu-list__item {
+        row-gap: 17px;
+    }
+
+    .menu-label {
+        row-gap: 9px;
+    }
+
+    .menu-content {
+        column-gap: 72px;
     }
 }

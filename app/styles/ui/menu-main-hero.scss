@@ -15,4 +15,17 @@
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+    margin-left: 138px;
+}
+
+@media(max-width: 1366px) {
+    .menu-main-hero {
+        height: 767px;
+    }
+
+    .menu-main-hero-wrapper {
+        width: 554px;
+        row-gap: 36px;
+        margin-left: 98px;
+    }
 }

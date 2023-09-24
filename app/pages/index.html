@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         
+        <link rel="stylesheet" href = "../css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css">
         <link rel="stylesheet" href="../css/style.min.css">
+        <script src="../js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
         <script src="../js/main.min.js"></script>
     </head>
     <body>
@@ -17,5 +19,17 @@
         <!--=include ../components/dist/category/category.html -->
         <!--=include ../components/dist/testimonials/testimonials.html -->
         <!--=include ../components/dist/footer/footer.html -->
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },  
+            })
+        </script>
     </body>    
 </html>

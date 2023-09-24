@@ -18,11 +18,24 @@
         row-gap: 50px;
         color: var(--color--white);
 
-        .about-main-hero_subtitle {
+        .anmahe__subtitle {
             font-style: normal;
             font-weight: 700;
             line-height: 48px;
             /* 150% */
+        }
+    }
+}
+
+@media(max-width: 1366px) {
+
+    .about-main-hero {
+        height: 737px;
+
+        .about-main-hero-wrapper {
+            margin-right: 58px;
+            width: 650px;
+            row-gap: 36px;
         }
     }
 }

@@ -3,18 +3,14 @@
     display: flex;
     column-gap: 121px;
 
-    .about-staff_coloumn {
+    .abstaff__coloumn {
         display: flex;
 
-        .about-staff_coloumn__card {
+        .abstaff__coloumn-card {
             display: flex;
             flex-direction: column;
             row-gap: 24px;
             justify-content: center;
-
-            .about-staff_coloumn__card-subtitle {
-                
-            }
         }
     }
 }

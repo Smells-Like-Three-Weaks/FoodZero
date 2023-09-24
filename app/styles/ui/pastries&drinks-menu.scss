@@ -2,9 +2,15 @@
     position: relative;
 }
 
-.drinks-menu_top__image {
+.drinks-menu__top-image {
     position: absolute;
     stroke-width: 1px;
     top: 70px;
     right: 724px;
+}
+
+@media(max-width: 1366px) {
+    .pastries-menu-content__image {
+        width: 562px;
+    }
 }
