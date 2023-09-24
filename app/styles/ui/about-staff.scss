@@ -1,0 +1,16 @@
+.about-staff-wrapper {
+    padding: 162px 0px 305px 0px;
+    display: flex;
+    column-gap: 121px;
+
+    .abstaff__coloumn {
+        display: flex;
+
+        .abstaff__coloumn-card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            justify-content: center;
+        }
+    }
+}

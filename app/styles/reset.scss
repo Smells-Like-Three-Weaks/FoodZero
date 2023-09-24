@@ -11,6 +11,7 @@ html, body {
 	border: none;
 }
 
+
 *,
 *::before,
 *::after {
@@ -19,7 +20,7 @@ html, body {
 
 /* Links */
 
-a, a:link, a:visited  {
+a, a:link, a:visited, a:active a:hover  {
     text-decoration: none;
 }
 

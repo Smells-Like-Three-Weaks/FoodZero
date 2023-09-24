@@ -1,0 +1,180 @@
+.navigation-links__list-item__img {
+    height: 12px;
+    width: 12px;
+}
+
+.navigation-active {
+    left: 0;
+    transition: left 1s;
+}
+
+.navigation {
+    left: -100%;
+    transition: left 0.7s;
+}
+
+.navigation, .navigation-active {
+    background-image: url(../../assets/images/dist/navigation-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;  
+    height: 1080px;
+    color: var(--color--white);
+    position: absolute;
+    top: 0;
+    
+
+    .navigation-overlay {
+        background-color: rgba(35, 48, 0, 0.8);
+        width: 100%;
+        height: 100%;
+
+        .navigation-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            .navigation-links__list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 28px;
+                padding: 222px 0px 0px 300px;
+
+                .navigation-links__list-item {
+                    display: flex;
+                    column-gap: 14px;
+                    align-items: center;
+                    text-decoration: none;
+                    color: var(--color--white);
+
+                    .navigation-links__list-item__text {
+                        text-transform: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .navigation-contact {
+                display: flex;
+                flex-direction: column;
+                row-gap: 38px;
+                margin-right: 186px;
+                width: 297px;
+
+                .navigation-contact__title {
+                    border-bottom: 2px dotted var(--color--white);
+                    width: 100%;
+                    padding-bottom: 8px;
+                    width: 297px;
+                }
+
+                .navigation-contact__contact {
+                    width: 160px;
+                }
+
+                .navigation-contact__adress {
+                    width: 187px;
+                }
+
+                .navigation-contact__link-list {
+                    display: flex;
+                    column-gap: 18px;
+
+                }
+            }
+        }
+    }
+}
+
+.navigation-blog {
+    display: flex;
+    flex-direction: column;
+        row-gap: 12px;
+
+    .navigation-blog-title {
+        display: flex;
+        row-gap: 14px;
+        align-items: center;
+
+    }
+
+    .navigation-blog-main {
+        display: flex;
+
+         .navigation-blog-main__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+            padding-left: 40px;
+
+            .navigation-blog-main__list-item {
+                color: var(--color--white);
+                font-family: "Rufina-Regular", sans-serif;
+            }
+         }
+    }
+}
+
+@media(max-width: 1366px) {
+    .navigation-links__list-item__img {
+        height: 9px;
+        width: 9px;
+    }
+
+    .navigation, .navigation-active {
+        width: 100%;
+        height: 768px;
+
+        .navigation-overlay {
+
+            .navigation-button-close {
+                width: 60px;
+            }
+
+            .navigation-content {
+
+                .navigation-links__list {
+                    row-gap: 20px;
+                    padding: 158px 0px 0px 213px;
+
+                    .navigation-links__list-item {
+                        column-gap: 10px;
+
+                        .navigation-links__list-item__text {
+                            text-transform: none;
+                            text-decoration: none;
+                            
+                        }
+                    }
+                }
+
+                .navigation-contact {
+                    row-gap: 27px;
+                    margin-right: 132px;
+                    width: 211px;
+
+                    .navigation-contact__title {
+                        padding-bottom: 6px;
+                        width: 211px;
+                        font-size: 13px;
+                    }
+
+                    .navigation-contact__contact {
+                        width: 114px;
+                        font-size: 13px;
+                    }
+
+                    .navigation-contact__adress {
+                        width: 133px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navigation-content__link-list__item-img {
+        width: 20px;
+    }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="../css/style.min.css">
+        <script src="../js/main.min.js"></script>
+    </head>
+    <body>
+        <section class="header">
+            <div class="wrapper header-wrapper">
+                <div class="header-title">
+                    <img class="header-title__logo" src="../../../assets/images/dist/Logo.png" alt="">
+                    <button class="header-title__burger-button" id="headerBurger" onclick="buttonNavigation('open')">                   
+                        <img class="header-title__burger-image" id="" src="../../../assets/images/dist/burger.png" alt="">
+                    </button>
+                </div>
+                <div class="header-contacts">
+                    <p class="header-contacts__contact inter">
+                        +86 852 346 000
+                    </p>
+                    <a class="header-contacts__button" href="#reservation">
+                        Reservation
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="menu-main-hero">
+            <div class="wrapper menu-main-hero-wrapper">
+                <h1>
+                    View Our New Menu
+                </h1>
+                <h6>
+                    The freshest ingredients for you every day
+                </h6>
+            </div>
+        </section>
+        <section class="navigation" id="navigation">
+            <div class="navigation-overlay">
+                <button class="navigation-button-close" id="navigationClose" onclick="buttonNavigation('close')">
+                    <img src="../../../assets/images/dist/navigation-close-button.svg" alt="">
+                </button>
+                <div class="navigation-content">
+                    <div class="navigation-links__list">
+                        <a class="navigation-links__list-item" href="index.html">
+                            <img class="navigation-links__list-item__img" src="../../../assets/images/dist/navigation-dot.svg"
+                                alt="">
+                            <p class="nav-item navigation-links__list-item__text">
+                                HOME
+                            </p>
+                        </a>
+                        <a class="navigation-links__list-item" href="menu.html">
+                            <img class="navigation-links__list-item__img" src="../../../assets/images/dist/navigation-dot.svg"
+                                alt="">
+                            <p class="nav-item navigation-links__list-item__text">
+                                MENU
+                            </p>
+                        </a>
+                        <div class="navigation-blog">
+                            <div class="navigation-blog-title">
+                                <img class="navigation-links__list-item__img" src="../../../assets/images/dist/navigation-dot.svg"
+                                    alt="">
+                                <p class="nav-item navigation-links__list-item__text">
+                                    BLOGS
+                                </p>
+                            </div>
+                            <div class="navigation-blog-main">
+                                <div class="navigation-blog-main__list">
+                                    <a class="nav-subitem navigation-blog-main__list-item" href="blogs.html">1 Coloumn</a>
+                                    <a class="nav-subitem navigation-blog-main__list-item" href="blogs.html">2 Coloumns</a>
+                                    <a class="nav-subitem navigation-blog-main__list-item" href="blogs.html">Sidebar Post</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="navigation-links__list-item" href="about.html">
+                            <img class="navigation-links__list-item__img" src="../../../assets/images/dist/navigation-dot.svg"
+                                alt="">
+                            <p class="nav-item navigation-links__list-item__text">
+                                ABOUT
+                            </p>
+                        </a>
+                        <a class="navigation-links__list-item" href="contact.html">
+                            <img class="navigation-links__list-item__img" src="../../../assets/images/dist/navigation-dot.svg"
+                                alt="">
+                            <p class="nav-item navigation-links__list-item__text">
+                                CONTACTS
+                            </p>
+                        </a>
+                    </div>
+                    <div class="navigation-contact">
+                        <h6 class="navigation-contact__title">
+                            Contact
+                        </h6>
+                        <p class="navigation-contact__contact widget-texts">
+                            +86 852 346 000
+                            info@foodzero.com
+                        </p>
+                        <p class="widget-texts navigation-contact__adress">
+                            1959 Sepulveda Blvd.
+                            Culver City, CA, 90230
+                        </p>
+                        <ul class="navigation-contact__link-list">
+                            <li class="navigation-content__link-list__item">
+                                <button class="navigation-content__link-list__item-button">
+                                    <img class="navigation-content__link-list__item-img" src="../../../assets/images/dist/Icon__instagram.svg" alt="">
+                                </button>    
+                            </li>
+                            <li class="navigation-content__link-list__item">
+                                <button class="navigation-content__link-list__item-button">
+                                    <img class="navigation-content__link-list__item-img" src="../../../assets/images/dist/Icon__twitter.svg" alt="">
+                                </button>    
+                            </li>
+                            <li class="navigation-content__link-list__item">
+                                <button class="navigation-content__link-list__item-button">
+                                    <img class="navigation-content__link-list__item-img" src="../../../assets/images/dist/Icon__facebook.svg" alt="">
+                                </button>    
+                            </li>
+                            <li class="navigation-content__link-list__item">
+                                <button class="navigation-content__link-list__item-button">
+                                    <img class="navigation-content__link-list__item-img" src="../../../assets/images/dist/Icon__youtube.svg" alt="">
+                                </button>    
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="starters-menu" id="starters-menu">
+            <div class="wrapper menu-wrapper">
+                <div class="menu-top">
+                    <h2>Starters</h2>
+                    <p class="nav-subitem">
+                        This is a section of your menu. Give your section a brief description
+                    </p>
+                    <img class="startmenu__top-image" src="../../../assets/images/dist/starters-top.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <div class="startmenu__coloumn">
+                        <img class="startmenu-content__image" src="../../../assets/images/dist/startmenu.png" alt="">
+                    </div>
+                    <div class="startmenu__coloumn">
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <h5 class="menu-label">
+                                    $20
+                                </h5>
+                                <h4>Grilled Okra and Tomatoes </h4>
+                                <p class="nav-subitem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </li>
+                            <li class="menu-list__item">
+                                <h5 class="menu-label">
+                                    $18
+                                </h5>
+                                <h4>Cucumber Salad</h4>
+                                <p class="nav-subitem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </li>
+                            <li class="menu-list__item">
+                                <h5 class="menu-label">
+                                    $12
+                                </h5>
+                                <h4>Basil Pancakes</h4>
+                                <p class="nav-subitem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mains-menu" id="mains-menu">
+            <div class="wrapper menu-wrapper">
+                <div class="menu-top">
+                    <h2>
+                        Mains
+                    </h2>
+                    <p class="nav-subitem">
+                        This is a section of your menu. Give your section a brief description
+                    </p>
+                </div>
+                <div class="menu-content">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <h5 class="menu-label">
+                                $20
+                            </h5>
+                            <h4>Deep Sea Snow White Cod Fillet</h4>
+                            <p class="nav-subitem">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                        <li class="menu-list__item">
+                            <h5 class="menu-label">
+                                $22
+                            </h5>
+                            <h4>Steak With Rosemary Butter</h4>
+                            <p class="nav-subitem">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                        <li class="menu-list__item">
+                            <h5 class="menu-label">
+                                $20
+                            </h5>
+                            <h4>Steaks with Grilled Kimchi</h4>
+                            <p class="nav-subitem">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                    </ul>
+                    <img class="mains-menu-content__image" src="../../../assets/images/dist/mains-menu.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="drinks-menu" id="drinks-menu">
+            <div class="wrapper menu-wrapper">
+                <div class="menu-top">
+                    <h2>Pastries&Drinks</h2>
+                    <p class="nav-subitem">
+                        This is a section of your menu. Give your section a brief description
+                    </p>
+                    
+                </div>
+                <div class="menu-content">
+                    <img class="pastries-menu-content__image" src="../../../assets/images/dist/drinks-menu.png" alt="">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <h5 class="menu-label">
+                                $158
+                            </h5>
+                            <h4>
+                                Wine Pairing
+                            </h4>
+                            <p class="nav-subitem">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                        <li class="menu-list__item">
+                            <h5 class="menu-label">
+                                $168
+                            </h5>
+                            <h4>
+                                Natural Wine Pairing
+                            </h4>
+                            <p class="nav-subitem">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                        <li class="menu-list__item">
+                            <h5 class="menu-label">
+                                $90
+                            </h5>
+                            <h4>
+                                Whisky Flyer
+                            </h4>
+                            <p class="nav-subitem">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="drinks-menu__top-image" src="../../../assets/images/dist/drinks-top.webp" alt="">
+        </section>
+        <section class="reservation" id="reservation">
+            <div class="wrapper reservation-wrapper">
+                <div class="reservation-top">
+                    <h2>
+                        Make a reservation
+                    </h2>
+                    <p class="this-is-body reservation-top__description">
+                        Get in touch with restaurant
+                    </p>
+                </div>
+                <div class="reservation-content">
+                    <input class="this-is-body reservation-content__input-date reservation-content__input" id="reservationDate" placeholder="дд/мм/гггг" type="text">
+                    <select class="this-is-body reservation-content__input-time reservation-content__input" id="reservationTime">
+                        <option value="date1">9:00 am</option>
+                        <option value="date2">10:00 am</option>
+                        <option value="date3">11:00 am</option>
+                        <option value="date4">12:00 am</option>
+                        <option value="date5">1:00 pm</option>
+                        <option value="date6">2:00 pm</option>
+                        <option value="date7">3:00 pm</option>
+                        <option value="date8">4:00 pm</option>
+                        <option value="date9">5:00 pm</option>
+                        <option value="date10">6:00 pm</option>
+                        <option value="date11">7:00 pm</option>
+                        <option value="date12">8:00 pm</option>
+                        <option value="date13">9:00 pm</option>
+                        <option value="date14">10:00 pm</option>
+                        <option value="date15">11:00 pm</option>
+                    </select>
+                    <select class="this-is-body reservation-content__input-persons reservation-content__input" id="reservationPerson">
+                        <option value="pers1">1 Person</option>
+                        <option value="pers2">2 Person</option>
+                        <option value="pers3">3 Person</option>
+                        <option value="pers4">4+ Person</option>
+                    </select>
+                </div>
+                <button class="reservation-button" id="reservationButton" onclick="bookNow()">
+                    <h6 class="reservation-button__text">Book Now</h6>   
+                </button>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-main">
+                <div class="wrapper footer-main__wrapper">
+                    <h4 class="footer-main__title">
+                        Food Zero.
+                    </h4>
+                    <div class="footer-main__contacts">
+                        <h6 class="footer-main__contacts-heading">
+                            Contact
+                        </h6>
+                        <p class="widget-texts footer-main__contacts-contact">
+                            +1+86 852 346 000 info@foodzero.com
+                        </p>
+                        <p class="widget-texts footer-main__contacts-info">
+                            1959 Sepulveda Blvd. Culver City, CA, 90230
+                        </p>
+                    </div>
+                    <div class="footer-main__recipe">
+                        <h6>
+                            Never Miss a Recipe
+                        </h6>
+                        <div class="footer-main__recipe__mail">
+                            <input class="footer-main__recipe-input this-is-body" id="subscripeInput" type="text" placeholder="Email adress">
+                            <button onclick="subscripe()" class="footer-main__recipe-button" id="subscripeButton">
+                                Subscripe
+                            </button>
+                           
+                        </div>
+                        <p class="widgets-comments">
+                            Join our subscribers and get best recipe delivered each week!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrapper footer-bottom__wrapper">
+                    <p class="this-is-body footer-links__rights">
+                        © 2020 Zero Inc. All rights Reserved
+                    </p>
+                    <div class="footer-bottom__links">
+                        <ul class="footer-bottom__links-list">
+                            <li class="footer-bottom__links-list-item">
+                                <button class="footer-bottom-list-item__button">
+                                    <img class="footer-bottom-list-item__bottom-icon" src="../../../assets/images/dist/Icon__instagram.svg" alt="">
+                                </button>
+                            </li>
+                            <li class="footer-bottom__links-list-item">
+                                <button class="footer-bottom-list-item__button">
+                                    <img class="footer-bottom-list-item__bottom-icon" src="../../../assets/images/dist/Icon__twitter.svg" alt="">
+                                </button>
+                            </li>
+                            <li class="footer-bottom__links-list-item">
+                                <button class="footer-bottom-list-item__button">
+                                    <img class="footer-bottom-list-item__bottom-icon" src="../../../assets/images/dist/Icon__facebook.svg" alt="">
+                                </button>
+                            </li>
+                            <li class="footer-bottom__links-list-item">
+                                <button class="footer-bottom-list-item__button">
+                                    <img class="footer-bottom-list-item__bottom-icon" src="../../../assets/images/dist/Icon__youtube.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
