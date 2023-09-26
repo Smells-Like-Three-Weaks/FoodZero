@@ -1,0 +1,32 @@
+.features-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 207px;
+    padding-bottom: 190px;
+}
+
+.features_column {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_img {
+    background-color: #EBF0E4;
+    border-radius: 260px;
+    width: 260px;
+    height: 260px;
+    padding: 40px;
+}
+
+.h4_features__text {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+.features_text {
+    text-align: center;
+}
